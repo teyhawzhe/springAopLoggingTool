@@ -1,0 +1,7 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.autolog.configuration.GetMappingAutoLoggerConfig,\
+com.autolog.configuration.PostMappingAutoLoggerConfig,\
+com.autolog.configuration.ServiceAutoLoggerConfig,\
+com.autolog.configuration.ExceptionAutoLoggerConfig,\
+com.autolog.configuration.MybatisAutoLoggerConfig,\
+com.autolog.configuration.ThreadLocalInterceptorConfig
