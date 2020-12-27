@@ -13,6 +13,8 @@ import lombok.Data;
 @ConfigurationProperties(prefix = "thread.local.class")
 public class TheadLocalProperties {
 
+		public boolean enable = true;
+	
 		private List<String> name = new ArrayList<>();
 	
 }

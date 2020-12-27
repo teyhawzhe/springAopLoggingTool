@@ -10,13 +10,7 @@ import lombok.Data;
 @ConfigurationProperties(prefix = "monitor")
 public class AutoLoggerSettingProperties {
 
-	private boolean postSwitcher = true;
-	
-	private boolean getSwitcher = true;
-	
-	private boolean deleteSwitcher = true;
-	
-	private boolean putSwitcher = true;
+	private boolean httpsSwitcher = true;
 	
 	private boolean serviceSwitcher = true;
 }

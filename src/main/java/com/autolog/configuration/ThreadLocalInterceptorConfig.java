@@ -7,8 +7,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
-import com.autolog.action.before.threadLocalInterceptor.ThreadLocalInterceptor;
-import com.autolog.action.before.threadLocalInterceptor.impl.DefaultThreadLocalInterceptor;
+import com.autolog.action.ThreadLocalInterceptor;
+import com.autolog.action.bean.threadLocal.DefaultThreadLocalInterceptorBean;
 import com.autolog.properties.TheadLocalProperties;
 
 @Configuration(proxyBeanMethods = false)
@@ -20,7 +20,7 @@ public class ThreadLocalInterceptorConfig {
 	@Bean
 	@ConditionalOnMissingBean(ThreadLocalInterceptor.class)
 	public ThreadLocalInterceptor threadLocalInterceptorBean() {
-		return new DefaultThreadLocalInterceptor();
+		return new DefaultThreadLocalInterceptorBean();
 	}
-	
+
 }
